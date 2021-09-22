@@ -36,6 +36,20 @@ public class Elevador {
         return qtdPessoasDentro;
     }
 
+    //setters
+    public void setTerreo(int terreo){
+        this.terreo = terreo;
+    }
+
+    public void setTotalAndares(int totalAndares){
+        this.totalAndares = totalAndares;
+    }
+
+    public void setCapacidadeElevador(int capacidadeElevador){
+        this.capacidadeElevador = capacidadeElevador;
+    }
+
+
 
     //metodo para exibir o elevador
     public void exibirElevador() {
@@ -88,6 +102,25 @@ public class Elevador {
 
     }
 
+    //metodo para o elevador subir
+    public void subirElevador(int andarDesejado) {
+
+        if (andarDesejado > terreo && andarAtual < andarDesejado) {
+
+            if (andarDesejado <= totalAndares && andarAtual < totalAndares) {
+
+                andarAtual = andarDesejado;
+                System.out.println("\nSubindo para o  " + andarDesejado + "º andar!");
+
+            } else {
+                System.out.println("\nO elevador ja está no ultimo andar!");
+            }
+
+        } else {
+            System.out.println("\nPara subir digite um andar acima do andar atual!");
+        }
+
+    }
 
     //metodo para o elevador descer
     public void descerElevador(int andarDesejado) {
