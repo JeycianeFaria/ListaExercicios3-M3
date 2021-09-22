@@ -4,11 +4,15 @@ public class Pessoa {
 
     //atributos
     private String nome;
-    private String dataNascimento;
+    private Data dataNascimento;
     private double altura;
 
     //construtor
-    public Pessoa(String nome, String dataNascimento, double altura){
+    public Pessoa(){
+
+    }
+
+    public Pessoa(String nome, Data dataNascimento, double altura){
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.altura = altura;
@@ -24,11 +28,11 @@ public class Pessoa {
         this.nome = nome;
     }
 
-    public String getDataNascimento(){
+    public Data getDataNascimento(){
         return  dataNascimento;
     }
 
-    public void setDataNascimento(String dataNascimento){
+    public void setDataNascimento(Data dataNascimento){
         this.dataNascimento = dataNascimento;
     }
 
