@@ -41,4 +41,10 @@ public class Televisao {
         this.controleRemoto = controleRemoto;
     }
 
+    //exibirDadosAtuais
+    public void exibirDados(){
+        System.out.println("Volume: " + volume);
+        System.out.println("Canal: " + canal);
+    }
+
 }
