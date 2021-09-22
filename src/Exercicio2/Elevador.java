@@ -49,7 +49,26 @@ public class Elevador {
         this.capacidadeElevador = capacidadeElevador;
     }
 
+    public void setAndarAtual(int andarAtual){
+        if (andarAtual >= terreo && andarAtual <= totalAndares){
+            if (andarAtual > this.andarAtual){
+                System.out.println("\nSubindo para o  " + andarAtual + "º andar!");
+            }else if(andarAtual == terreo){
+                System.out.println("\nDescendo para o  Terreo!");
+            }
+            else{
+                System.out.println("\nDescendo para o  " + andarAtual + "º andar!");
+            }
+            this.andarAtual = andarAtual;
 
+        }else if (andarAtual > totalAndares){
+            System.out.println("\nNão é possivel subir além do numero máximo de andares!");
+            System.out.println("Número de andares: " + totalAndares);
+        }else if (andarAtual < terreo){
+            System.out.println("\nNão é possivel descer além do terreo!");
+            System.out.println("Terreo : " + terreo);
+        }
+    }
 
     //metodo para exibir o elevador
     public void exibirElevador() {
@@ -101,45 +120,4 @@ public class Elevador {
 
 
     }
-
-    //metodo para o elevador subir
-    public void subirElevador(int andarDesejado) {
-
-        if (andarDesejado > terreo && andarAtual < andarDesejado) {
-
-            if (andarDesejado <= totalAndares && andarAtual < totalAndares) {
-
-                andarAtual = andarDesejado;
-                System.out.println("\nSubindo para o  " + andarDesejado + "º andar!");
-
-            } else {
-                System.out.println("\nO elevador ja está no ultimo andar!");
-            }
-
-        } else {
-            System.out.println("\nPara subir digite um andar acima do andar atual!");
-        }
-
-    }
-
-    //metodo para o elevador descer
-    public void descerElevador(int andarDesejado) {
-
-        if (andarDesejado < totalAndares && andarAtual > andarDesejado) {
-
-            if (andarDesejado >= terreo ) {
-
-                andarAtual = andarDesejado;
-                System.out.println("\nDescendo para o " + andarDesejado + "º andar");
-
-            } else {
-                System.out.println("\nO elevador está no térreo");
-            }
-
-        } else {
-            System.out.println("\nPara descer digite um valor abaixo do andar atual!");
-        }
-
-    }
-
 }
