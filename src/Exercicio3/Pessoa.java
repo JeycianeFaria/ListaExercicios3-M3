@@ -14,8 +14,31 @@ public class Pessoa {
         this.altura = altura;
     }
 
-    //getters e setters
 
+    //getters e setters
+    public String getNome(){
+        return nome;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public String getDataNascimento(){
+        return  dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento){
+        this.dataNascimento = dataNascimento;
+    }
+
+    public double getAltura(){
+        return  altura;
+    }
+
+    public void setAltura(double altura){
+        this.altura = altura;
+    }
 
 
     //Método para imprimir dados da pessoa
