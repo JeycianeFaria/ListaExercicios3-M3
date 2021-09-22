@@ -48,10 +48,14 @@ public class Pessoa {
     //Método para imprimir dados da pessoa
     public void exibirDados(){
         System.out.println("Nome: " + nome);
-        System.out.println("Data de Nascimento: " + dataNascimento);
+        System.out.println("Data de Nascimento: " + dataNascimento.getDia() + "/" + dataNascimento.getMes() + "/" + dataNascimento.getAno());
         System.out.println("Altura: " + altura);
     }
 
     //Método para calcular idade da pessoa
+    public int calcularIdade(int anoAtual){
+        int idade = anoAtual - dataNascimento.getAno();
+        return idade;
+    }
 
 }
