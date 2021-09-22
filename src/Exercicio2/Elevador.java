@@ -117,7 +117,5 @@ public class Elevador {
             System.out.println("Quantidade de pessoas dentro do elevador = " + qtdPessoasDentro);
         }
 
-
-
     }
 }

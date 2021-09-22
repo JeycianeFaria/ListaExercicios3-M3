@@ -12,13 +12,9 @@ public class Main {
         elevador1.exibirElevador();
         elevador1.setAndarAtual(1);
         elevador1.exibirElevador();
-        elevador1.setAndarAtual(0);
-        elevador1.exibirElevador();
-        elevador1.setAndarAtual(10);
-        elevador1.exibirElevador();
-        elevador1.setAndarAtual(15);
-        elevador1.exibirElevador();
-        elevador1.setAndarAtual(-5);
+        elevador1.entrarElevador(5);
+        elevador1.setCapacidadeElevador(10);
+        elevador1.sairElevador(2);
         elevador1.exibirElevador();
 
     }
