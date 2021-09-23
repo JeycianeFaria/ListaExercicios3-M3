@@ -4,9 +4,11 @@ public class Televisao {
 
     private int volume;
     private int canal;
-    private ControleRemoto controleRemoto;
 
     //construtor
+    public Televisao(){
+
+    }
     public Televisao(int volume, int canal){
 
         this.volume = volume;
@@ -33,13 +35,7 @@ public class Televisao {
         this.canal = canal;
     }
 
-    public ControleRemoto getControleRemoto() {
-        return controleRemoto;
-    }
 
-    public void setControleRemoto(ControleRemoto controleRemoto) {
-        this.controleRemoto = controleRemoto;
-    }
 
     //exibirDadosAtuais
     public void exibirDados(){
