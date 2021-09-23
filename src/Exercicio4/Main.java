@@ -6,21 +6,21 @@ public class Main {
 
         //instanciando objetos
         Televisao tv1 = new Televisao(20,7);
+        ControleRemoto controle = new ControleRemoto(tv1);
 
         tv1.exibirDados();
-        tv1.aumentarVolume();
+        controle.aumentarvolume();
         tv1.exibirDados();
-        tv1.diminuirVolume();
+        controle.diminuirVolume();
+        controle.diminuirVolume();
         tv1.exibirDados();
-        tv1.passarCanal();
+        controle.passarCanal();
         tv1.exibirDados();
-        tv1.voltarCanal();
+        controle.voltarCanal();
+        controle.voltarCanal();
         tv1.exibirDados();
-        tv1.trocarCanal(10);
+        controle.selecionarCanal(15);
         tv1.exibirDados();
-
-
-
 
 
     }
