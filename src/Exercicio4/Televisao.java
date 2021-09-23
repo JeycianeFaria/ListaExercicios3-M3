@@ -9,6 +9,7 @@ public class Televisao {
     public Televisao(){
 
     }
+
     public Televisao(int volume, int canal){
 
         this.volume = volume;
@@ -35,6 +36,35 @@ public class Televisao {
         this.canal = canal;
     }
 
+
+    //métodos para aumentar volume
+    public void aumentarVolume(){
+        volume += 1;
+    }
+
+
+    //método para dimunuir volume
+    public void diminuirVolume(){
+        volume -= 1;
+    }
+
+
+    //método para passar o Canal
+     public void passarCanal(){
+        canal += 1;
+     }
+
+
+    //método para voltar o Canal
+    public void voltarCanal(){
+        canal -= 1;
+    }
+
+
+    //método para trocar Canal
+    public void trocarCanal(int canal){
+        this.canal = canal;
+    }
 
 
     //exibirDadosAtuais

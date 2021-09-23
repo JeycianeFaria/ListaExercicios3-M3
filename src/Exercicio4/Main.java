@@ -6,6 +6,11 @@ public class Main {
 
         //instanciando objetos
         Televisao tv1 = new Televisao(20,7);
+        ControleRemoto controle = new ControleRemoto();
+
+        tv1.exibirDados();
+        controle.trocarVolume("aumentar");
+        tv1.exibirDados();
 
     }
 
