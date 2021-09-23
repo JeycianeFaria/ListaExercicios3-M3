@@ -5,6 +5,7 @@ public class Televisao {
     private int volume;
     private int canal;
 
+
     //construtor
     public Televisao(){
 
@@ -17,15 +18,15 @@ public class Televisao {
 
     }
 
-    //getters e setters
 
+    //getters e setters
 
     public int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
-        this.volume = volume;
+    public void setVolume() {
+        this.volume += 1;
     }
 
     public int getCanal() {
