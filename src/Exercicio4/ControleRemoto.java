@@ -4,10 +4,13 @@ public class ControleRemoto{
 
     Televisao tv;
 
+    //construtor
     public ControleRemoto(Televisao tv){
         this.tv = tv;
     }
 
+
+    //método aumentar o volume
     public void aumentarvolume(){
 
         if(tv.getVolume() < 100){
@@ -20,6 +23,8 @@ public class ControleRemoto{
 
     }
 
+
+    //método diminuir o volume
     public void diminuirVolume(){
 
         if (tv.getVolume() > 0){
@@ -32,6 +37,7 @@ public class ControleRemoto{
     }
 
 
+    //método para passar os canais
     public void passarCanal(){
 
         if(tv.getCanal() > 0){
@@ -43,6 +49,8 @@ public class ControleRemoto{
 
     }
 
+
+    //método para voltar ao canal anterior
     public void voltarCanal(){
 
         if (tv.getCanal() > 0){
@@ -54,6 +62,8 @@ public class ControleRemoto{
 
     }
 
+
+    //método para selecionar qual canal quer
     public void selecionarCanal(int canal){
         tv.setCanal(canal);
     }

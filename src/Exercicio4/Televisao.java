@@ -4,10 +4,9 @@ public class Televisao {
 
     private int volume;
     private int canal;
-    private Televisao controle;
 
 
-    //construtor
+    //construtores
     public Televisao(){
 
     }
@@ -38,13 +37,6 @@ public class Televisao {
         this.canal = canal;
     }
 
-    public Televisao getControle() {
-        return controle;
-    }
-
-    public void setControle(Televisao controle) {
-        this.controle = controle;
-    }
 
     //exibirDadosAtuais
     public void exibirDados(){
