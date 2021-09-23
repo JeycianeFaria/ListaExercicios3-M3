@@ -4,6 +4,7 @@ public class Televisao {
 
     private int volume;
     private int canal;
+    private Televisao controle;
 
 
     //construtor
@@ -25,8 +26,8 @@ public class Televisao {
         return volume;
     }
 
-    public void setVolume() {
-        this.volume += 1;
+    public void setVolume(int volume) {
+        this.volume = volume;
     }
 
     public int getCanal() {
@@ -37,41 +38,19 @@ public class Televisao {
         this.canal = canal;
     }
 
-
-    //métodos para aumentar volume
-    public void aumentarVolume(){
-        volume += 1;
+    public Televisao getControle() {
+        return controle;
     }
 
-
-    //método para dimunuir volume
-    public void diminuirVolume(){
-        volume -= 1;
+    public void setControle(Televisao controle) {
+        this.controle = controle;
     }
-
-
-    //método para passar o Canal
-     public void passarCanal(){
-        canal += 1;
-     }
-
-
-    //método para voltar o Canal
-    public void voltarCanal(){
-        canal -= 1;
-    }
-
-
-    //método para trocar Canal
-    public void trocarCanal(int canal){
-        this.canal = canal;
-    }
-
 
     //exibirDadosAtuais
     public void exibirDados(){
         System.out.println("Volume: " + volume);
         System.out.println("Canal: " + canal);
+        System.out.println("=================================");
     }
 
 }
